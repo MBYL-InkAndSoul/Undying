@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "Unbreaker architectury version\nOriginal: https://github.com/MCTeamPotato/Unbreakabler/ \nCopy a part of implements: giveUnbreakableTag() & MixinItem",
+  "authors": [
+    "MCTeamPotato",
+    "InkAndSoul"
+  ],
+  "contact": {
+    "homepage": "https://github.com/MCTeamPotato/Unbreakabler/",
+    "sources": "https://bbs.mcmod.cn/thread-14479-1-1.html"
+  },
+  "license": "${license}",
+  "icon": "assets/${id}/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "inkandsoul.${id}.fabric.ModFabricInit"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.19.4",
+    "architectury": ">=8.1.79"
+  },
+  "mixins": [
+    "${id}.mixin.json"
+  ]
+}

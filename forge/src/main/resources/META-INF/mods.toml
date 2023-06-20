@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[45,)"
+#issueTrackerURL = ""
+license = "${license}"
+
+[[mods]]
+modId = "${id}"
+version = "${version}"
+displayName = "${name}"
+displayURL="https://bbs.mcmod.cn/thread-14479-1-1.html"
+authors = "MCTeamPotato, InkAndSoul"
+description = '''
+Unbreaker architectury version
+Original Source: https://github.com/MCTeamPotato/Unbreakabler/
+Copy a part of implements: giveUnbreakableTag() & MixinItem
+'''
+logoFile="icon.png"
+
+[[dependencies.iteminfo]]
+modId = "forge"
+mandatory = true
+versionRange = "[45,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.iteminfo]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.iteminfo]]
+modId = "architectury"
+mandatory = true
+versionRange = "[8.1.79,)"
+ordering = "AFTER"
+side = "BOTH"

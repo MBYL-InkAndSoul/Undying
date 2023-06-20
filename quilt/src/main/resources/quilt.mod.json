@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "${id}",
+    "version": "${version}",
+    "name": "${name}",
+    "description": "Unbreaker architectury version\nOriginal: https://github.com/MCTeamPotato/Unbreakabler/ \nCopy a part of implements: giveUnbreakableTag() & MixinItem",
+    "authors": [
+      "MCTeamPotato",
+      "InkAndSoul"
+    ],
+    "contact": {
+      "homepage": "https://github.com/MCTeamPotato/Unbreakabler/",
+      "sources": "https://bbs.mcmod.cn/thread-14479-1-1.html"
+    },
+    "license": "${license}",
+    "icon": "assets/${id}/icon.png",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "environment": "*",
+    "entrypoints": {
+      "init": [
+        "inkandsoul.${id}.quilt.ModQuiltInit"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.19.4"
+      },
+      {
+        "id": "architectury",
+        "version": ">=8.1.79"
+      }
+    ]
+  },
+  "mixins": [
+    "${id}.mixin.json"
+  ]
+}
